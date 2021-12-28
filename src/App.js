@@ -8,11 +8,12 @@ import Favorites from './pages/Favorites';
 import Profile from './pages/Profile';
 import ProfileEdit from './pages/ProfileEdit';
 import NotFound from './pages/NotFound';
+import { HashRouter } from 'react-router-dom';
 
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Route exact path="/trybetunes" component={ Login } />
         <Route path="/search" component={ Search } />
         <Route path="/album/:id" component={ Album } />
@@ -20,7 +21,7 @@ class App extends React.Component {
         <Route exact path="/profile" component={ Profile } />
         <Route path="/profile/edit" component={ ProfileEdit } />
         <Route path="*" component={ NotFound } />
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
