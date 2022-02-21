@@ -1,0 +1,106 @@
+.login-page-div{
+  align-items: center;
+  background-image: url('./mesh-gradient.png');
+  background-size: cover;
+  color: rgb(249, 65, 68);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* https://css-tricks.com/almanac/properties/t/text-shadow/ */
+.trybeTunes-title{
+  color: rgb(255, 203, 242);
+  font-family: 'Shrikhand', cursive;
+  font-size: 100px;
+  text-shadow: 
+    5px 0px 1px rgb(248, 94, 0), 8px 1px 1px rgb(248, 94, 0), 
+    2px 1px 1px rgb(248, 94, 0), 1px 2px 1px rgb(248, 94, 0),
+    3px 2px 1px rgb(248, 94, 0), 2px 3px 1px rgb(248, 94, 0),
+    4px 3px 1px rgb(248, 94, 0), 3px 4px 1px rgb(248, 94, 0),
+    5px 4px 1px rgb(248, 94, 0), 4px 5px 1px rgb(248, 94, 0),
+    6px 5px 1px rgb(248, 94, 0), 5px 6px 1px rgb(248, 94, 0),
+    7px 6px 1px rgb(248, 94, 0);
+}
+
+.login-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 31%;
+}
+
+#inputName{
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(243, 114, 44);
+  color: rgba(248, 94, 0);
+  font-family: "Open Sans","Source Sans Pro",Helvetica,sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  height: 30px;
+  margin-top: 10%;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#inputName::placeholder {
+  color: rgba(248, 94, 0, 0.5);
+}
+
+#inputName:focus{
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(243, 114, 44);
+  outline: none !important;
+}
+
+/* https://codepen.io/chancesq/pen/bGpddXE */
+#btn-login-page {
+  align-items: center;
+	background-image: linear-gradient(315deg, rgb(224, 43, 46) 20%, rgb(243, 114, 44) 74%);
+	background-size: 200% 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+  border: none;
+  color: rgba(248, 94, 0, 0.8);
+	cursor: pointer;
+  display: flex;
+  font-family: "Open Sans","Source Sans Pro",Helvetica,sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  justify-content: center;
+  height: 42px;
+  margin-top: 60px;
+  text-transform: uppercase;
+  transition: 500ms;
+	width: 156px;	
+}
+
+#btn-login-page:before {
+  align-items: center;
+  background-position: right;
+	background-color: rgb(241, 194, 230);
+  color: rgba(248, 94, 0, 0.8);
+	content: 'Entrar';
+	display: flex;
+	font-size: 14px;
+  justify-content: center;
+  height: 36px;
+	position: absolute;
+  transition: 500ms;
+	width: 150px;	
+}
+
+#btn-login-page:hover {
+	background-position: right;
+}
+
+#btn-login-page:hover:before {
+	color: rgba(248, 94, 0, 0.8);
+}
+
+#btn-login-page:focus {
+	outline: none;
+}
